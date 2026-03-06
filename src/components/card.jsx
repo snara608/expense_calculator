@@ -9,7 +9,7 @@ function Card({title, money, buttontext, buttontype, handleClick, success = true
                     {`${money}`}
                 </span>
             </h3>
-            <button onClick={handleClick} style={buttontype}>
+            <button onClick={handleClick} className={buttontype}>
                 {buttontext}
             </button>
         </div>

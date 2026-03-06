@@ -60,7 +60,7 @@ function ExpenseTracker() {
             title="Wallet Balance"
             money={balance}
             buttontext="+ Add Income"
-            buttonVariant="success"
+            buttontype="success"
             handleClick={() => setIsOpenBalance(true)}
         />
 
@@ -68,7 +68,7 @@ function ExpenseTracker() {
             title="Expense"
             money={expense}
             buttontext="+ Add Expense"
-            buttonVariant="failure"
+            buttontype="failure"
             success={false}
             handleClick={() => setIsOpenExpense(true)}
         />
