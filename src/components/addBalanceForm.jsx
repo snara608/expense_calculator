@@ -36,7 +36,13 @@ export default function AddBalanceForm({ setIsOpen, setBalance }){
                 <Button type="submit" variant="primary" shadow>
                     Add Balance
                 </Button>
-                <Button variant="secondary" shadow handleClick={() => setIsOpen(false)}>
+
+                <Button
+                    type="button"
+                    variant="secondary"
+                    shadow
+                    handleClick={() => setIsOpen(false)}
+                >
                     Cancel
                 </Button>
             </form>
