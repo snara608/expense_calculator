@@ -33,7 +33,7 @@ export default function AddBalanceForm({ setIsOpen, setBalance }){
                     onChange={(e) => setIncome(e.target.value)}
                     required                
                 />
-                <Button type="sumbit" styles="primary" shadow>
+                <Button type="submit"  shadow>
                     Add Balance
                 </Button>
                 <Button styles="secondary" shadow handleClick={() => setIsOpen(false)}>
