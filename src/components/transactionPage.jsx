@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import TransactionCard from "./transactionCard";
 import Pagination from "./panigation";
 import ModalWrapper from "./Modal";
