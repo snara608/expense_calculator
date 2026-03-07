@@ -10,7 +10,7 @@ export default function AddBalanceForm({ setIsOpen, setBalance }){
         e.preventDefault();
 
         if (Number(income) < 0){
-            enqueueSnackbar("Income should be greater thabn 0", {
+            enqueueSnackbar("Income should be greater than 0", {
                 variant: "warning",
             });
             setIsOpen(false);

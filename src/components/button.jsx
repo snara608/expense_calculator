@@ -1,9 +1,16 @@
 import React from 'react';
 
-const Button = ({ children, handleClick, type = "button", variant = "primary", shadow = false, ...props }) => {
+const Button = ({ 
+    children, 
+    handleClick, 
+    type = "button", // Default value
+    variant = "primary", 
+    shadow = false, 
+    ...props 
+}) => {
     return (
         <button 
-            type={type} 
+            type={type} // This will be "submit" if passed from AddBalanceForm
             onClick={handleClick} 
             className={`btn-${variant} ${shadow ? 'shadow' : ''}`}
             {...props}
