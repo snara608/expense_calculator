@@ -1,18 +1,13 @@
 import React from 'react';
 
-const Button = ({ 
-    children, 
-    handleClick, 
-    type = "button", // Default value
-    variant = "primary", 
-    shadow = false, 
-    ...props 
-}) => {
+const Button = ({ children, handleClick, type = "button", variant = "primary", shadow = false, ...props }) => {
     return (
         <button 
-            type={type} // This will be "submit" if passed from AddBalanceForm
+            // Ensure type is dynamic and can be "submit"
+            type={type} 
             onClick={handleClick} 
             className={`btn-${variant} ${shadow ? 'shadow' : ''}`}
+            // Spread props last so they don't get accidentally overwritten
             {...props}
         >
             {children}
